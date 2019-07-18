@@ -1,9 +1,10 @@
 body {
-    background-color: #99cc00;
-    color: #ffffff;
+    color: #4c4646;
     font-family: domine, roboto, sans-serif;
     font-size: 16px;
 }
+
+/*Typography*/
 
 h1,
 h2,
@@ -15,11 +16,52 @@ h6 {
     margin-bottom: 25px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-shadow: #666362 3px 2px 0px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+
+}
+
+h2 {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
 p {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 24px;
+    line-height: 28px;
     margin-bottom: 15px;
 }
+
+/*anchor styles*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3bb9ff;
+}
+
+a:active {
+    color: #e9dcbe;
+}
+
+/*main containers*/
 
 .wrapper {
     width: 980px;
@@ -28,22 +70,80 @@ p {
 }
 
 header {
-    background-color: firebrick;
+    background-color: #343434;
 }
 
 nav {
-    background-color: cadetblue;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     text-align: center;
 }
 
+nav ul {
+    height: 40px;
+    padding-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 55px;
+}
+
+nav ul li a {
+    color: white;
+    background-color: #4c4646;
+    ;
+    text-decoration: none;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover,
+nav ul li a.currentpage {
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: black
+}
+
+.hero {
+    min-height: 500px;
+    background-image: url(../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 main {
-    background-color: darkgreen;
+    background-color: #fff8dc;
     padding: 20px;
+    overflow: auto;
 }
 
 footer {
-    background-color: cornflowerblue;
+    background-color: #343434;
     padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 85%;
+    color: #f3f3f3;
+}
+
+/*image setup*/
+
+.leftimg {
+    float: left;
+    width: 450px;
+}
+
+.rightimg {
+    float: right;
+    width: 450px;
+}
+
+.bottomimg {
+    width: 50%;
+    width: 980px;
+    margin-top: 20px;
 }
